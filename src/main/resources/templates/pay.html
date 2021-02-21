@@ -3,11 +3,10 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>pay</title>
 </head>
 <body>
-<h1 th:text="|hello hello ${appName}|">app</h1>
-<p th:text="${mySpecialNumber}">mySpecialNumber</p>
-<a th:href="@{/about}">about</a>
+<p>De datum van vandaag is <span th:text="${orderDate}"></span></p>
+<p>De uiterste datum van betalen is <span th:text="${orderDate.plusDays(30)}"></span></p>
 </body>
 </html>
